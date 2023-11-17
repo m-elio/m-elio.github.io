@@ -1,0 +1,48 @@
+title: m-elio's Portfolio
+description: >- # this means to ignore newlines until "baseurl:"
+  m-elio's personal website
+url: "https://m-elio.github.io"
+locale: en
+
+minimal_mistakes_skin: "dark"
+
+include:
+  - "_pages"
+
+author:
+  name     : "Elio Musacchio"
+  avatar   : ""
+  bio      : "Hello"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/m-elio"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/m-elio"
+
+# Build settings
+remote_theme: mmistakes/minimal-mistakes@4.24.0
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-include-cache
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# used to test locally
+github: [metadata]
